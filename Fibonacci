@@ -1,0 +1,15 @@
+def fibonacci(num):
+    first = 0
+    second = 1
+    last = 0
+    for i in range(num+1):
+        print(last,end=" ")
+        last = first+second
+        first = second
+        second = last
+
+num = input("Enter Range :- ")
+if int(num) < 0:
+    print("Enter a Valid Number")
+else:
+    fibonacci(int(num))
