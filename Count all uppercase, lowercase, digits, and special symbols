@@ -1,0 +1,21 @@
+string = input("Enter a String :- ")
+
+upper = 0
+lower = 0
+number = 0
+symbol = 0
+
+for i in string:
+    if i.islower() == True:
+        lower += 1
+    elif i.isupper() == True:
+        upper += 1
+    elif i.isdigit() == True:
+        number += 1
+    else:
+        symbol += 1
+
+print("Upper = ",upper)
+print("Lower = ",lower)
+print("Numbers = ",number)
+print("Symbol = ",symbol)
