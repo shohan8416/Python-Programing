@@ -1,0 +1,8 @@
+while True:
+    a = input("Enter Word: ")
+    b = a[::-1]
+    if a == b:
+        print("Palindrome")
+        break
+    else:
+        continue
