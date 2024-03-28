@@ -1,0 +1,8 @@
+string1 = input("Enter First String :- ")
+string2 = input("Enter Second String :- ")
+string3 = string2[::-1]
+string4 = ''
+for i in range(0,len(string1)):
+    string4 += string1[i]+string3[i]
+
+print(string4)
