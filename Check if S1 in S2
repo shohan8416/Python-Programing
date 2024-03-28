@@ -1,0 +1,7 @@
+String1 = input("Enter First String :- ")
+String2 = input("Enter Second String :- ")
+
+if String1 in String2:
+    print("True")
+else:
+    print("False")
