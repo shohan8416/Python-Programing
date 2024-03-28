@@ -1,0 +1,10 @@
+string1 = input("Enter Your mixed string :- ")
+string2 = " "
+
+for i in range(0,len(string1)):
+    if string1[i].islower() == True:
+        string2 += string1[i].upper()
+    else:
+        string2 += string1[i].lower()
+
+print(string2)
