@@ -1,0 +1,33 @@
+import random
+
+name = input("Enter Your Name:- ")
+print("Welcome",name)
+print("Guess The Name of a Fruit !")
+
+words = ['apple', 'orange', 'banana', 'mango', 'jackfruit', 'coconut', 'guava']
+word = random.choice(words)
+
+guesses = ''
+turns = 12
+
+while turns > 0:
+    faild = 0
+    for i in word:
+        if i in guesses:
+            print(i,end=" ")
+        else:
+            print("_")
+            faild += 1
+    if faild == 0:
+        print(" == You Win !")
+        print("The word is",word)
+        break
+    print()
+    guess = input("Guess a Fruit name:- ")
+    guesses += guess
+    if guess not in word:
+        turns -= 1
+        print("Wrong!")
+        print("You have",turns,"Turns")
+    if turns == 0:
+        print("You Lose!")
